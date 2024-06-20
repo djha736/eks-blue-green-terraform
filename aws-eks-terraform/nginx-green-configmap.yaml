@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-green-content
+data:
+  index.html: |
+    <html>
+    <head><title>Green Deployment</title></head>
+    <body><h1>This is the Green Deployment!</h1></body>
+    </html>
