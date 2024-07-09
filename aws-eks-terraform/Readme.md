@@ -42,13 +42,17 @@ To set up an EKS cluster using Terraform and run an NGINX deployment with blue-g
    Apply the ConfigMap and deployment configurations using below commands.
 
    kubectl apply -f nginx-blue-configmap.yaml
+   
    kubectl apply -f nginx-deployment-blue.yaml
+   
    kubectl apply -f nginx-green-configmap.yaml
+   
    kubectl apply -f nginx-deployment-green.yaml
+   
    kubectl apply -f nginx-service.yaml
 
 
-8. Check the External IP Address
+9. Check the External IP Address
    
    Retrieve the external IP address for your NGINX service:
     
