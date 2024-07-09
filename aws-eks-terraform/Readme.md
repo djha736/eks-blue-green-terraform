@@ -66,8 +66,9 @@ Look for the EXTERNAL-IP of the nginx-service.
     we can switch traffic between blue and green in different ways.
 
     1. Use the kubectl patch commands to switch traffic between the blue and green deployments.
+       
 
-       To switch traffic to the blue deployment:
+      To switch traffic to the blue deployment:
 
           kubectl patch service nginx-service -p '{"spec":{"selector":{"version":"blue"}}}'
       
